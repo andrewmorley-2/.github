@@ -1,5 +1,6 @@
 name: Automated Code Review
 on:
+  pull_request:
   workflow_call:
 
 jobs:
