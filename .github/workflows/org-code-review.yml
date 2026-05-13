@@ -24,3 +24,4 @@ jobs:
         with:
           model: ${{ vars.PR_REVIEW_MODEL || 'gpt-4o-mini' }}
           foundry-endpoint: ${{ vars.FOUNDRY_INFERENCE_ENDPOINT }}
+          block-on-critical: ${{ vars.BLOCK_ON_CRITICAL || 'false' }}
