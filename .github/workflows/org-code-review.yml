@@ -20,7 +20,7 @@ jobs:
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
-      - uses: andrewmorley-2/foundry-automated-code-review@v1
+      - uses: andrewmorley-2/foundry-automated-code-review@preview
         with:
           model: ${{ vars.PR_REVIEW_MODEL || 'gpt-4o' }}
           foundry-endpoint: ${{ vars.FOUNDRY_INFERENCE_ENDPOINT }}
